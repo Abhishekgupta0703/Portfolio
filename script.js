@@ -30,3 +30,30 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
   loader.style.display = "none"
 });
+
+// Contact form handling
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const formData = new FormData(this);
+  const submitBtn = this.querySelector('button[type="submit"]');
+  
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+  
+  // Simulate form submission (replace with actual AJAX call)
+  setTimeout(() => {
+    submitBtn.textContent = 'Message Sent!';
+    submitBtn.style.backgroundColor = '#46b953';
+    submitBtn.style.borderColor = '#46b953';
+    
+    // Reset form after 2 seconds
+    setTimeout(() => {
+      this.reset();
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+      submitBtn.style.backgroundColor = 'transparent';
+      submitBtn.style.borderColor = '#fec86a';
+    }, 2000);
+  }, 1500);
+});

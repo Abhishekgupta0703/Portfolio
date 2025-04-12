@@ -3,26 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style1.css" />
+    <meta name="description" content="Portfolio of Abhishek Gupta, Freelance Web Developer & Software Engineer." />
+    <title>Abhishek Gupta - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <meta property="og:title" content="Abhishek Gupta - Portfolio" />
+    <meta property="og:description" content="Explore my projects and skills." />
+    <meta property="og:image" content="asset/Hero.png" />
+    <meta property="og:url" content="http://yourwebsite.com" />
   </head>
   <body>
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
-    <div class="navbar">
+    <header class="navbar">
       <nav>
-        <div class="logo"><img src="asset/carepy_logo-1.svg" /></div>
+        <div class="logo"><img src="asset/carepy_logo-1.svg" alt="Carepy Logo" /></div>
         <div class="nav-links nav" id="nav">
-          <a href="#about" onclick="menuOnClick()">&lt; About /&gt;</a>
-          <a href="#skills" onclick="menuOnClick()">&lt; Skills /&gt;</a>
-          <a href="#portfolio" onclick="menuOnClick()">&lt; Portfolio /&gt;</a>
-          <a href="#contact" onclick="menuOnClick()">&lt; Contact /&gt;</a>
+          <a href="#about" onclick="menuOnClick()">< About /></a>
+          <a href="#skills" onclick="menuOnClick()">< Skills /></a>
+          <a href="#portfolio" onclick="menuOnClick()">< Portfolio /></a>
+          <a href="#contact" onclick="menuOnClick()">< Contact /></a>
         </div>
         <div id="menu-bar" onclick="menuOnClick()">
           <div id="bar1" class="bar"></div>
@@ -31,34 +36,32 @@
         </div>
       </nav>
       <div class="menu-bg" id="menu-bg"></div>
-    </div>
-    <div class="main" onclick="remove()">
+    </header>
+    <main class="main" onclick="remove()">
       <section class="header">
         <div class="landing">
           <div class="intro">
             <h3>
-              I'M <span>Abhishek Gupta</span><br />Freelance Web Developer &
-              <br />Software Engineer
+              I'M <span>Abhishek Gupta</span><br />Freelance Web Developer & Software Engineer
             </h3>
-            <a href="asset\Abhishek.pdf" download="Abhishek_Gupta"
-              ><button>Resume <i class="ri-file-download-line"></i></button
-            ></a>
+            <a href="asset/Abhishek.pdf" download="Abhishek_Gupta">
+              <button>Resume <i class="ri-file-download-line"></i></button>
+            </a>
           </div>
-          <!-- <img src="asset/model_bw.png" alt="" /> -->
           <div class="socials">
             <div class="line"></div>
-            <a href="https://www.linkedin.com/in/abhishek-g-996b40217/"
-              ><i class="ri-linkedin-fill" id="linkedin"></i
-            ></a>
-            <a href="https://github.com/Abhishekgupta0703/"
-              ><i class="ri-github-fill" id="github"></i
-            ></a>
-            <a href="https://www.instagram.com/abhi_sahu001/"
-              ><i class="ri-instagram-line" id="instagram"></i
-            ></a>
-            <a href="mailto:abhishekgupta26267@gmail.com"
-              ><i class="ri-mail-send-line" id="whatsapp"></i
-            ></a>
+            <a href="https://www.linkedin.com/in/abhishek-g-996b40217/" aria-label="LinkedIn Profile">
+              <i class="ri-linkedin-fill" id="linkedin"></i>
+            </a>
+            <a href="https://github.com/Abhishekgupta0703/" aria-label="GitHub Profile">
+              <i class="ri-github-fill" id="github"></i>
+            </a>
+            <a href="https://www.instagram.com/abhi_sahu001/" aria-label="Instagram Profile">
+              <i class="ri-instagram-line" id="instagram"></i>
+            </a>
+            <a href="mailto:abhishekgupta26267@gmail.com" aria-label="Email Abhishek Gupta">
+              <i class="ri-mail-send-line" id="whatsapp"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -67,26 +70,15 @@
         <div class="description">
           <div class="line"></div>
           <p>
-            As an aspiring web developer, I am driven by a deep passion for
-            creating dynamic and immersive online experiences. With
-            <span>expertise in the MERN Stack </span>, I differentiate myself by
-            blending modern technologies seamlessly to build robust web
-            applications. My professional journey is marked by significant
-            milestones, including successful projects and diverse achievements
-            that reflect my <span>continuous growth and skills</span>.
-            Throughout my development endeavors, I have embraced unique
-            experiences and overcome challenges that have shaped my approach to
-            crafting innovative solutions. Grounded in core values like
-            dedication, user-centricity, and a commitment to lifelong learning,
-            I prioritize delivering high-quality code that seamlessly integrates
-            design and functionality. Effective communication and collaboration
-            with clients are integral to my process, as
-            <span>
-              I strive for delivering projects on time, within budget, and with
-              atmost client satisfaction</span
-            >. My goal is to make a lasting impact in the web development space,
-            and I am eager to create innovative solutions that revolutionize the
-            digital landscape.
+            As an aspiring web developer, I am driven by a deep passion for creating dynamic and immersive online experiences. With
+            <span>expertise in the MERN Stack</span>, I differentiate myself by blending modern technologies seamlessly to build robust web
+            applications. My professional journey is marked by significant milestones, including successful projects and diverse achievements
+            that reflect my <span>continuous growth and skills</span>. Throughout my development endeavors, I have embraced unique
+            experiences and overcome challenges that have shaped my approach to crafting innovative solutions. Grounded in core values like
+            dedication, user-centricity, and a commitment to lifelong learning, I prioritize delivering high-quality code that seamlessly integrates
+            design and functionality. Effective communication and collaboration with clients are integral to my process, as
+            <span>I strive for delivering projects on time, within budget, and with utmost client satisfaction</span>. My goal is to make a lasting impact in the web development space,
+            and I am eager to create innovative solutions that revolutionize the digital landscape.
           </p>
         </div>
       </section>
@@ -94,51 +86,51 @@
         <h1>My Skills</h1>
         <div class="cards">
           <div class="skill-card reveal">
-            <img src="asset/react.svg" alt="" />
+            <img src="asset/react.svg" alt="ReactJS Logo" />
             <h2>ReactJS</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/html.svg" alt="" />
+            <img src="asset/html.svg" alt="HTML Logo" />
             <h2>HTML</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/css.svg" alt="" />
+            <img src="asset/css.svg" alt="CSS Logo" />
             <h2>CSS</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/js.svg" alt="" />
+            <img src="asset/js.svg" alt="JavaScript Logo" />
             <h2>JavaScript</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/Bootstrap_logo.svg" alt="" " />
+            <img src="asset/Bootstrap_logo.svg" alt="Bootstrap Logo" />
             <h2>Bootstrap</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/Tailwind.svg" alt="" />
+            <img src="asset/Tailwind.svg" alt="Tailwind CSS Logo" />
             <h2>Tailwind CSS</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/nodejs.svg" alt="" />
+            <img src="asset/nodejs.svg" alt="NodeJS Logo" />
             <h2>NodeJS</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/PHP.svg" alt="" />
-            <h2>Php</h2>
+            <img src="asset/PHP.svg" alt="PHP Logo" />
+            <h2>PHP</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/mongodb.svg" alt="" />
+            <img src="asset/mongodb.svg" alt="MongoDB Logo" />
             <h2>MongoDB</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/mysql.svg" alt="" />
+            <img src="asset/mysql.svg" alt="MySQL Logo" />
             <h2>MySQL</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/python.svg" alt="" />
+            <img src="asset/python.svg" alt="Python Logo" />
             <h2>Python</h2>
           </div>
           <div class="skill-card reveal">
-            <img src="asset/git.svg" alt="" />
+            <img src="asset/git.svg" alt="Git Logo" />
             <h2>GIT</h2>
           </div>
         </div>
@@ -147,105 +139,87 @@
         <h1>Portfolio</h1>
         <div class="portfolio-cards">
           <div class="portfolio-card reveal">
-            <img src="asset/project1.png" alt="" />
+            <img src="asset/project1.png" alt="Project 1 Screenshot" />
             <div class="overlay">
               <h3>Portfolio</h3>
               <p>Don't Need to go anywhere you are already here!</p>
-              <a href="Github" target="_blank"
-                >Github <i class="ri-arrow-right-line"></i
-              ></a>
+              <a href="Github" target="_blank" aria-label="View GitHub Repository">
+                Github <i class="ri-arrow-right-line"></i>
+              </a>
             </div>
           </div>
           <div class="portfolio-card reveal">
-            <img src="asset/project2.png" alt="" />
+            <img src="asset/project2.png" alt="Image Upscaler AI Screenshot" />
             <div class="overlay">
               <h3>Image Upscaler AI</h3>
               <p>Don't Need to go anywhere you are already here!</p>
               <div class="link-box">
-                <a
-                  href="https://github.com/Abhishekgupta0703/Image-Upscaler"
-                  target="_blank"
-                  >Github <i class="ri-arrow-right-line"></i
-                ></a>
-                <a
-                  href="https://github.com/Abhishekgupta0703/Image-Upscaler"
-                  target="_blank"
-                  >Live <i class="ri-arrow-right-line"></i
-                ></a>
+                <a href="https://github.com/Abhishekgupta0703/Image-Upscaler" target="_blank" aria-label="View GitHub Repository">
+                  Github <i class="ri-arrow-right-line"></i>
+                </a>
+                <a href="https://github.com/Abhishekgupta0703/Image-Upscaler" target="_blank" aria-label="View Live Project">
+                  Live <i class="ri-arrow-right-line"></i>
+                </a>
               </div>
             </div>
           </div>
           <div class="portfolio-card reveal">
-            <img src="asset/project3.png" alt="" />
+            <img src="asset/project3.png" alt="Reel Downloader Screenshot" />
             <div class="overlay">
               <h3>Reel Downloader</h3>
-              <p>With this tool the instagram videos can get downloaded</p>
+              <p>With this tool the Instagram videos can get downloaded</p>
               <div class="link-box">
-                <a
-                  href="https://github.com/Abhishekgupta0703/Instagram-Reel-Downloader"
-                  target="_blank"
-                  >Github <i class="ri-arrow-right-line"></i
-                ></a>
-                <a
-                  href="https://abhishekgupta0703.github.io/Instagram-Reel-Downloader/"
-                  target="_blank"
-                  >Live <i class="ri-arrow-right-line"></i
-                ></a>
+                <a href="https://github.com/Abhishekgupta0703/Instagram-Reel-Downloader" target="_blank" aria-label="View GitHub Repository">
+                  Github <i class="ri-arrow-right-line"></i>
+                </a>
+                <a href="https://abhishekgupta0703.github.io/Instagram-Reel-Downloader/" target="_blank" aria-label="View Live Project">
+                  Live <i class="ri-arrow-right-line"></i>
+                </a>
               </div>
             </div>
           </div>
           <div class="portfolio-card reveal">
-            <img src="asset/project4.png" alt="" />
+            <img src="asset/project4.png" alt="X-Cleaner Screenshot" />
             <div class="overlay">
               <h3>X-Cleaner</h3>
               <p>This is a Product portfolio website</p>
               <div class="link-box">
-                <a
-                  href="https://github.com/Abhishekgupta0703/X-Cleaner"
-                  target="_blank"
-                  >Github <i class="ri-arrow-right-line"></i
-                ></a>
-                <a
-                  href="https://abhishekgupta0703.github.io/X-Cleaner"
-                  target="_blank"
-                  >Live <i class="ri-arrow-right-line"></i
-                ></a>
+                <a href="https://github.com/Abhishekgupta0703/X-Cleaner" target="_blank" aria-label="View GitHub Repository">
+                  Github <i class="ri-arrow-right-line"></i>
+                </a>
+                <a href="https://abhishekgupta0703.github.io/X-Cleaner" target="_blank" aria-label="View Live Project">
+                  Live <i class="ri-arrow-right-line"></i>
+                </a>
               </div>
             </div>
           </div>
           <div class="portfolio-card reveal">
-            <img src="asset/project5.png" alt="" />
+            <img src="asset/project5.png" alt="TheLeadingNavigators Screenshot" />
             <div class="overlay">
               <h3>TheLeadingNavigators</h3>
               <p>This website refers to a business portfolio</p>
               <div class="link-box">
-                <a
-                  href="https://github.com/Abhishekgupta0703/Projects-TLN/"
-                  target="_blank"
-                  >Github <i class="ri-arrow-right-line"></i
-                ></a>
-                <a href="https://theleadingnavigators.com/" target="_blank"
-                  >Live <i class="ri-arrow-right-line"></i
-                ></a>
+                <a href="https://github.com/Abhishekgupta0703/Projects-TLN/" target="_blank" aria-label="View GitHub Repository">
+                  Github <i class="ri-arrow-right-line"></i>
+                </a>
+                <a href="https://theleadingnavigators.com/" target="_blank" aria-label="View Live Project">
+                  Live <i class="ri-arrow-right-line"></i>
+                </a>
               </div>
             </div>
           </div>
           <div class="portfolio-card reveal">
-            <img src="asset/project6.png" alt="" />
+            <img src="asset/project6.png" alt="Weather Forecast Screenshot" />
             <div class="overlay">
               <h3>Weather Forecast</h3>
-              <p>This is my real time weather forecasting app</p>
+              <p>This is my real-time weather forecasting app</p>
               <div class="link-box">
-                <a
-                  href="https://github.com/Abhishekgupta0703/weather-forecast/"
-                  target="_blank"
-                  >Github <i class="ri-arrow-right-line"></i
-                ></a>
-                <a
-                  href="https://abhishekgupta0703.github.io/weather-forecast/"
-                  target="_blank"
-                  >Live <i class="ri-arrow-right-line"></i
-                ></a>
+                <a href="https://github.com/Abhishekgupta0703/weather-forecast/" target="_blank" aria-label="View GitHub Repository">
+                  Github <i class="ri-arrow-right-line"></i>
+                </a>
+                <a href="https://abhishekgupta0703.github.io/weather-forecast/" target="_blank" aria-label="View Live Project">
+                  Live <i class="ri-arrow-right-line"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -253,31 +227,37 @@
       </section>
       <section class="contact" id="contact">
         <h1>Lets Connect</h1>
-        <div
-          class="visme_d"
-          data-title="Contact Form"
-          data-url="ep379oey-contact-form"
-          data-domain="forms"
-          data-full-page="false"
-          data-min-height="450px"
-          data-form-id="12834"
-        ></div>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
         <div class="contact-icon">
-          <a href="https://www.linkedin.com/in/abhishek-g-996b40217/"
-            ><i class="ri-linkedin-fill" id="linkedin"></i
-          ></a>
-          <a href="https://github.com/Abhishekgupta0703/"
-            ><i class="ri-github-fill" id="github"></i
-          ></a>
-          <a href="https://www.instagram.com/abhi_sahu001/"
-            ><i class="ri-instagram-line" id="instagram"></i
-          ></a>
-          <a href="mailto:abhishekgupta26267@gmail.com"
-            ><i class="ri-mail-send-line" id="whatsapp"></i
-          ></a>
+          <a href="https://www.linkedin.com/in/abhishek-g-996b40217/" aria-label="LinkedIn Profile">
+            <i class="ri-linkedin-fill" id="linkedin"></i>
+          </a>
+          <a href="https://github.com/Abhishekgupta0703/" aria-label="GitHub Profile">
+            <i class="ri-github-fill" id="github"></i>
+          </a>
+          <a href="https://www.instagram.com/abhi_sahu001/" aria-label="Instagram Profile">
+            <i class="ri-instagram-line" id="instagram"></i>
+          </a>
+          <a href="mailto:abhishekgupta26267@gmail.com" aria-label="Email Abhishek Gupta">
+            <i class="ri-mail-send-line" id="whatsapp"></i>
+          </a>
         </div>
       </section>
-    </div>
+    </main>
     <script src="script.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -290,6 +270,5 @@
         $(".loader-wrapper").fadeOut("slow");
       });
     </script>
-    <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
   </body>
 </html>
