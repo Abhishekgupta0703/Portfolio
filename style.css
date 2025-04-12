@@ -91,7 +91,12 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
   line-height: 1.6;
+  user-select: var(--accent-color);
 }
+::selection {
+  color: rgb(7, 0, 217);
+  background: rgb(217, 166, 0);
+  }
 
 .navbar {
   position: fixed;
@@ -230,29 +235,58 @@ section {
   height: auto;
 }
 
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .socials {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  position: fixed;
-  right: 20px;
   bottom: 20px;
   z-index: 5;
 }
+
 .socials a {
   text-decoration: none;
+  opacity: 0;
+  animation: slideInFromRight 0.5s ease-out forwards;
+  animation-delay: calc(0.15s * var(--i));
+}
+
+@keyframes fadeInLine {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .socials .line {
   background-color: #fec86a;
   height: 15vh;
   width: 2.5px;
+  opacity: 0;
+  animation: fadeInLine 1s ease forwards;
+  animation-delay: 0.2s; /* Adjust delay as needed */
 }
 
 .socials i {
   color: #fbfbfb;
   font-size: 36px;
+  transition: all 0.3s ease;
 }
 #linkedin:hover {
   transition: 0.3s all ease;
@@ -499,12 +533,31 @@ section {
 }
 
 .blog-posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
   padding: 0 20px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.blog-post {
+  flex: 0 1 450px;
+  background: var(--secondary-bg);
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .blog-post {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
 }
 
 .blog-post {
@@ -515,6 +568,7 @@ section {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   border: 1px solid rgba(255,255,255,0.1);
   text-align: left;
+  width: 100%;
 }
 
 .blog-post:hover {

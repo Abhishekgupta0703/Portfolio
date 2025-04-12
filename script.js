@@ -28,7 +28,19 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
-  loader.style.display = "none"
+  loader.style.display = "none";
+  
+  // Trigger social icons animation
+  const socialIcons = document.querySelectorAll('.socials a');
+  socialIcons.forEach(icon => {
+    icon.style.animationPlayState = 'running';
+  });
+  
+  // Trigger line animation
+  const line = document.querySelector('.socials .line');
+  if (line) {
+    line.style.animationPlayState = 'running';
+  }
 });
 
 // Contact form handling
