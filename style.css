@@ -161,8 +161,7 @@ section {
 
 .header {
   padding: 20px 0 0;
-  /* background-image: url(asset/model_bw.png); */
-  background-image: url(asset/Hero.png);
+  /* background-image: url(asset/Hero.png); */
   background-position: 230px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,6 +179,7 @@ section {
 
 .landing .intro {
   display: flex;
+  flex:0 1 40%;
   justify-content: center;
   flex-direction: column;
 }
@@ -188,7 +188,6 @@ section {
   color: #fbfbfb;
   font-weight: 400;
   font-size: 32px;
-  /* margin-left: 10vw; */
 }
 
 .landing .intro h3 span {
@@ -213,13 +212,18 @@ section {
   background-color: #fec86a;
   color: #34353b;
 }
-
+.landing .img-box{
+  flex: 0 0 45%;
+}
+.img-box img{
+  width: 100%;
+}
 .socials {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  margin: 30% 10px 20px 0;
+  margin: 10% 10px 20px 0;
 }
 .socials a {
   text-decoration: none;
@@ -369,7 +373,7 @@ section {
 .portfolio-card {
   margin: auto;
   position: relative;
-  height: 200px;
+  height: 400px;
   width: 300px;
   background-color: var(--secondary-bg);
   border-radius: 20px;
@@ -384,9 +388,9 @@ section {
 }
 
 .portfolio-card img {
-  position: relative;
+  position:relative;
   width: 300px;
-  height: 200px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -398,7 +402,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2.5vh;
-  height: 140px;
+  height: 220px;
   width: 301px;
   background-color: #34353ba2;
   align-items: center;
@@ -422,6 +426,7 @@ section {
 
 .portfolio-card .overlay a {
   text-decoration: none;
+  margin: 3px;
   padding: 10px 25px;
   background-color: #fec86a;
   border-radius: 8px;
@@ -435,7 +440,7 @@ section {
 .overlay:hover {
   top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
 }
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
