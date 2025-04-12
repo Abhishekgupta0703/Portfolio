@@ -161,7 +161,6 @@ section {
 
 .header {
   padding: 20px 0 0;
-  /* background-image: url(asset/Hero.png); */
   background-position: 230px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -175,25 +174,30 @@ section {
   background-color: transparent;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 5%;
 }
 
 .landing .intro {
   display: flex;
-  flex:0 1 40%;
+  flex: 1 1 50%;
+  min-width: 300px;
   justify-content: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 .landing .intro h3 {
   color: #fbfbfb;
   font-weight: 400;
-  font-size: 32px;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: 1.3;
 }
 
 .landing .intro h3 span {
   color: #fec86a;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
 }
 
 .intro button {
@@ -204,26 +208,37 @@ section {
   border: 2px solid #fec86a;
   border-radius: 8px;
   color: #fec86a;
-  font-size: 16px;
+  font-size: clamp(14px, 1.5vw, 16px);
   transition: all ease 0.5s;
+  align-self: flex-start;
 }
 
 .intro button:hover {
   background-color: #fec86a;
   color: #34353b;
 }
-.landing .img-box{
-  flex: 0 0 45%;
+
+.landing .img-box {
+  flex: 1 1 40%;
+  min-width: 300px;
+  padding: 20px;
 }
-.img-box img{
+
+.img-box img {
   width: 100%;
+  max-width: 500px;
+  height: auto;
 }
+
 .socials {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  margin: 10% 10px 20px 0;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 5;
 }
 .socials a {
   text-decoration: none;
@@ -277,7 +292,7 @@ section {
 
 .about .description .line {
   height: 2.5px;
-  width: 400px;
+  width: 800px;
   background-color: #fec86a;
   margin-right: 32px;
 }
@@ -768,38 +783,77 @@ section {
   text-decoration: none;
   margin: 0 0.5rem;
 }
-@media (max-width: 570px) {
-  .header {
-    max-height: 95vh !important;
-    background-position: center 0px;
-    background-size: cover;
-  }
+@media (max-width: 1200px) {
   .landing {
-    justify-content: center;
+    padding: 0 2%;
   }
+  
   .landing .intro {
-    margin: auto auto 120px;
+    flex: 1 1 60%;
   }
+  
+  .landing .img-box {
+    flex: 1 1 35%;
+  }
+}
+
+@media (max-width: 900px) {
+  .landing {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .landing .intro {
+    order: 2;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .landing .img-box {
+    order: 1;
+    margin-bottom: 40px;
+    max-width: 400px;
+  }
+  
+  .intro button {
+    align-self: center;
+  }
+  
+  .socials {
+    position: static;
+    order: 3;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .socials .line {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
   .landing .intro h3 {
-    font-size: 20px;
+    font-size: clamp(24px, 6vw, 28px);
   }
+  
   .landing .intro h3 span {
-    font-size: 30px;
+    font-size: clamp(2.2rem, 7vw, 2.6rem);
   }
+  
   .intro button {
     height: 40px;
     width: 120px;
+    font-size: 14px;
   }
-  .socials {
-    gap: 7px;
-    margin: auto 10px 30px 0;
-  }
-  .socials .line {
-    height: 10vh;
-    background-color: #fec86a;
-  }
+  
   .socials i {
-    font-size: 28px;
+    font-size: 40px;
   }
   nav {
     flex-direction: row-reverse;
@@ -878,7 +932,7 @@ section {
   }
 
   .change-nav a {
-    color: #34353b;
+    color: #000000;
   }
 
   .change .bar {
