@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post | Abhishek Gupta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="asset/carepy_logo-1.svg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="index.html">
+                <div class="logo"><img src="asset/carepy_logo-1.svg" alt="Carepy Logo" /></div>
+            </a>
+            <div class="nav-links nav" id="nav">
+                <a href="index.html#about">
+                    < About />
+                </a>
+                <a href="index.html#skills">
+                    < Skills />
+                </a>
+                <a href="index.html#portfolio">
+                    < Portfolio />
+                </a>
+                <a href="index.html#blog">
+                    < Blog />
+                </a>
+                <a href="index.html#contact">
+                    < Contact />
+                </a>
+            </div>
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+        </nav>
+        <div class="menu-bg" id="menu-bg"></div>
+    </header>
+
+    <main class="blog-post-container">
+        <article class="blog-post-content">
+            <div class="blog-post-header">
+                <h1>Crypto Market Trends Analysis</h1>
+                <div class="post-meta">
+                    <span class="post-date">August 01, 2023</span>
+                    <span class="post-category">Cryptocurrency</span>
+                </div>
+            </div>
+
+
+
+            <div class="post-footer">
+                <div class="social-share">
+                    <span>Share this post:</span>
+                    <a href="#" aria-label="Share on Twitter"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#" aria-label="Share on LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#" aria-label="Share via Email"><i class="ri-mail-send-line"></i></a>
+                </div>
+                <div class="post-paging">
+                    <a href="./blog-1.html" class="back-to-blog">
+                        <i class="ri-arrow-left-line"></i> Previous Blog
+                    </a>
+                    <a href="index.html#blog" class="back-to-blog">
+                        </i> Back to Blogs
+                    </a>
+                    <a href="./blog-3.html" class="back-to-blog">
+                        Next Blog<i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

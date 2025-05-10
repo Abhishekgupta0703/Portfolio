@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post | Abhishek Gupta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="asset/carepy_logo-1.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav>
+      <a href="index.html">
+        <div class="logo">
+          <img src="asset/carepy_logo-1.svg" alt="Carepy Logo" />
+        </div>
+        </a>
+        <div class="nav-links nav" id="nav">
+          <a href="index.html#about">< About /></a>
+          <a href="index.html#skills">< Skills /></a>
+          <a href="index.html#portfolio">< Portfolio /></a>
+          <a href="index.html#blog">< Blog /></a>
+          <a href="index.html#contact">< Contact /></a>
+        </div>
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </nav>
+      <div class="menu-bg" id="menu-bg"></div>
+    </header>
+
+    <main class="blog-post-container">
+      <article class="blog-post-content">
+        <div class="blog-post-header">
+          <h1>Understanding Web3 Fundamentals</h1>
+          <div class="post-meta">
+            <span class="post-date">June 15, 2023</span>
+            <span class="post-category">Web3</span>
+          </div>
+        </div>
+
+            <div class="post-body">
+      <p>The internet is changing — again. What began as static websites in the 1990s and evolved into today’s social media-driven Web2 is now transforming into something new: <strong>Web3</strong>. Powered by blockchain technology, Web3 promises a decentralized, secure, and user-owned internet. But what does that really mean? Let’s break it down in simple terms.</p>
+
+      <h2>Evolution of the Internet: Web1 → Web2 → Web3</h2>
+      <ul>
+        <li><strong>Web1 (1990s – early 2000s):</strong> Known as the “read-only” web. Websites were static. Users could only view information. No interaction or user-generated content.</li>
+        <li><strong>Web2 (mid-2000s – present):</strong> The “read and write” web. Social media, blogs, cloud apps, and interactivity exploded. But tech giants (like Google, Meta, and Amazon) took control of user data and monetized it.</li>
+        <li><strong>Web3 (emerging now):</strong> The “read, write, and own” web. Data is decentralized, and users control their identity, assets, and content. Trust is replaced with cryptography. Ownership is enforced by blockchain.</li>
+      </ul>
+
+      <h2>Core Principles of Web3</h2>
+      <ol>
+      <li><strong>Decentralization:</strong> Web3 applications (dApps) do not rely on centralized servers. Instead, they run on blockchain networks made up of thousands of independent computers (nodes).</li>
+      <li><strong>Trustless Interactions:</strong> Web3 removes the need for middlemen. Smart contracts handle transactions, ensuring rules are enforced automatically without requiring users to trust each other.</li>
+      <li><strong>Ownership & Control:</strong> Users own their digital identity, assets, and data using private keys. No platform can lock them out or delete their content.</li>
+      <li><strong>Open Source & Transparency:</strong> Most Web3 protocols are open for anyone to inspect or build upon, encouraging collaboration and innovation.</li>
+      <li><strong>Permissionless Access:</strong> Anyone with an internet connection can use Web3 apps. No need for approval, sign-ups, or personal data sharing.</li>
+    </ol>
+      <h2>Key Technologies Behind Web3</h2>
+      <ul>
+        <li><strong>Blockchain:</strong> A public ledger that stores data across multiple nodes. Used for recording transactions in a secure, tamper-proof way. Examples: Ethereum, Solana, Polygon.</li>
+        <li><strong>Smart Contracts:</strong> Self-executing code that runs on a blockchain. They execute transactions automatically when predefined conditions are met (e.g., releasing funds when a task is completed).</li>
+        <li><strong>Cryptocurrencies:</strong> Digital currencies like ETH or SOL are used to pay for transactions, incentivize users, or represent assets.</li>
+        <li><strong>Wallets:</strong> Digital tools like MetaMask, Trust Wallet, or Ledger let users manage crypto, interact with dApps, and sign transactions.</li>
+        <li><strong>Decentralized Storage:</strong> Instead of Google Drive or Dropbox, files can be stored on IPFS or Arweave, where no single company can control or delete them.</li>
+        <li><strong>DAOs (Decentralized Autonomous Organizations):</strong> Online organizations governed by token-holding members who vote on decisions, budgets, and rules without traditional leadership.</li>
+        <li><strong>Oracles:</strong> Services like Chainlink that bring real-world data (like stock prices or weather) into smart contracts.</li>
+      </ul>
+
+      <h2>Real-World Use Cases of Web3</h2>
+      <ul>
+        <li><strong>DeFi (Decentralized Finance):</strong> Borrow, lend, or trade cryptocurrencies without banks using platforms like Aave or Uniswap.</li>
+        <li><strong>NFTs (Non-Fungible Tokens):</strong> Own unique digital assets like art, music, or game items using tokens stored on a blockchain.</li>
+        <li><strong>Decentralized Social Media:</strong> Platforms like Lens Protocol and Farcaster offer social media experiences without centralized moderation or ads.</li>
+        <li><strong>Gaming:</strong> Play-to-earn models allow gamers to earn crypto or NFTs by participating in games (e.g., Axie Infinity, Decentraland).</li>
+        <li><strong>Supply Chain:</strong> Track products transparently using blockchain, reducing fraud and increasing accountability in industries like food, fashion, and pharmaceuticals.</li>
+      </ul>
+
+      <h2>Benefits of Web3</h2>
+      <ul>
+        <li><strong>User Ownership:</strong> You own your content, data, and money — not companies.</li>
+        <li><strong>Greater Security:</strong> Data is distributed across the network, making it harder to hack or take down.</li>
+        <li><strong>Global Access:</strong> Anyone with the internet can use Web3 tools, including the unbanked population.</li>
+        <li><strong>Innovation Friendly:</strong> Open protocols allow developers to build on each other's work.</li>
+      </ul>
+
+      <h2>Challenges of Web3</h2>
+      <ul>
+        <li><strong>Scalability:</strong> Many blockchains struggle with speed and cost. Ethereum, for example, has high gas fees during peak usage.</li>
+        <li><strong>User Experience:</strong> Web3 apps can be confusing. Setting up wallets, signing transactions, and remembering private keys isn’t always beginner-friendly.</li>
+        <li><strong>Regulation:</strong> Governments are still figuring out how to regulate crypto and Web3 projects, leading to uncertainty.</li>
+        <li><strong>Energy Usage:</strong> Some blockchains (like Bitcoin) use a lot of energy, though newer ones are more eco-friendly (e.g., Ethereum after The Merge, Solana).</li>
+        <li><strong>Scams & Risks:</strong> As with any new space, Web3 has its share of frauds, rug pulls, and risky projects. Users must be cautious.</li>
+      </ul>
+
+      <h2>How to Get Started with Web3</h2>
+      <ol>
+        <li>Set up a crypto wallet (like MetaMask).</li>
+        <li>Buy a small amount of cryptocurrency (e.g., ETH or MATIC).</li>
+        <li>Explore dApps on platforms like <a href="https://www.dappradar.com" target="_blank">DappRadar</a>.</li>
+        <li>Try sending tokens, minting an NFT, or joining a DAO.</li>
+        <li>Follow trusted sources like <a href="https://ethereum.org" target="_blank">ethereum.org</a> and <a href="https://banklesshq.com" target="_blank">Bankless</a> to stay updated.</li>
+      </ol>
+
+      <h2>The Future of Web3</h2>
+      <p>Web3 is still evolving. Many developers are working on Layer 2 solutions (like Arbitrum, Optimism) to make transactions faster and cheaper. Others are creating better tools for privacy, identity, and cross-chain compatibility. As the space matures, we’ll likely see Web3 become more user-friendly and integrated into our daily lives.</p>
+
+      <p>Whether it fully replaces Web2 or merges with it, Web3 is clearly reshaping how we interact online. By understanding its fundamentals today, you’re positioning yourself for the future of the internet.</p>
+    </div>
+
+        <div class="post-footer">
+          <div class="social-share">
+            <span>Share this post:</span>
+            <a href="#" aria-label="Share on Twitter"
+              ><i class="ri-twitter-x-fill"></i
+            ></a>
+            <a href="#" aria-label="Share on LinkedIn"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+            <a href="#" aria-label="Share via Email"
+              ><i class="ri-mail-send-line"></i
+            ></a>
+          </div>
+          <div class="post-paging">
+            <a href="index.html#blog" class="back-to-blog disable">
+              <i class="ri-arrow-left-line"></i> Previous Blog
+            </a>
+            <a href="index.html#blog" class="back-to-blog">
+              </i> Back to Blogs
+            </a>
+            <a href="./blog-2.html" class="back-to-blog">
+               Next Blog<i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

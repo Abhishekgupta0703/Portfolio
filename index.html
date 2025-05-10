@@ -6,7 +6,7 @@
     <meta name="description" content="Portfolio of Abhishek Gupta, Freelance Web Developer & Software Engineer and Crypto Content Creator." />
     <title>Abhishek Gupta - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="asset/carepy_logo-1.svg" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -22,7 +22,9 @@
     </div>
     <header class="navbar">
       <nav>
+      <a href="index.html">
         <div class="logo"><img loading="" src="asset/carepy_logo-1.svg" alt="Carepy Logo" /></div>
+        </a>
         <div class="nav-links nav" id="nav">
           <a href="#about" onclick="menuOnClick()">< About /></a>
           <a href="#skills" onclick="menuOnClick()">< Skills /></a>
@@ -45,7 +47,7 @@
             <h3>
               I'M <span>Abhishek Gupta</span><br />Freelance Web Developer & Software Engineer
             </h3>
-            <a href="asset/Abhishek.pdf" download="Abhishek_Gupta">
+            <a href="asset/Abhishek_CV.pdf" download="Abhishek_Gupta">
               <button>Resume <i class="ri-file-download-line"></i></button>
             </a>
           </div>
@@ -197,26 +199,27 @@
             <h2>Understanding Web3 Fundamentals</h2>
             <p class="post-date">June 15, 2023</p>
             <p class="post-excerpt">An introduction to the core concepts of Web3 and how it's changing the internet landscape...</p>
-            <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+            <a href="./blog-1.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
           </div>
           <div class="blog-post reveal">
             <h2>Crypto Market Trends Analysis</h2>
             <p class="post-date">May 28, 2023</p>
             <p class="post-excerpt">Breaking down the latest trends in cryptocurrency markets and what they mean for investors...</p>
-            <a href="./blog-post.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+            <a href="./blog-2.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
           </div>
           <div class="blog-post reveal">
             <h2>Blockchain for Beginners</h2>
             <p class="post-date">April 10, 2023</p>
             <p class="post-excerpt">A simple guide to understanding blockchain technology without the technical jargon...</p>
-            <a href="#" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
+            <a href="./blog-3.html" class="read-more">Read More <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
       </section>
 
       <section class="contact" id="contact">
         <h1>Lets Connect</h1>
-        <form id="contactForm" class="contact-form" >
+        <form id="contactForm" class="contact-form" method="post">
+          <input type="hidden" name="access_key" value="6d86e249-d8fa-44aa-b7be-1d0ac14de596">
           <div class="form-group">
             <input type="text" id="name" name="name" required>
             <label for="name">Your Name</label>

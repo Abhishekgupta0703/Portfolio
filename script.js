@@ -43,29 +43,53 @@ window.addEventListener("load", function () {
   }
 });
 
-// Contact form handling
+// Contact form handling with Web3Forms submission (button only for status)
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  
-  const formData = new FormData(this);
-  const submitBtn = this.querySelector('button[type="submit"]');
-  
+
+  const form = this;
+  const formData = new FormData(form);
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
+  // Update button UI
   submitBtn.disabled = true;
   submitBtn.textContent = 'Sending...';
-  
-  // Simulate form submission (replace with actual AJAX call)
-  setTimeout(() => {
-    submitBtn.textContent = 'Message Sent!';
-    submitBtn.style.backgroundColor = '#46b953';
-    submitBtn.style.borderColor = '#46b953';
-    
-    // Reset form after 2 seconds
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: json
+  })
+  .then(async (response) => {
+    const json = await response.json();
+    if (response.status === 200) {
+      submitBtn.textContent = 'Message Sent!';
+      submitBtn.style.backgroundColor = '#46b953';
+      submitBtn.style.borderColor = '#46b953';
+    } else {
+      console.log(response);
+      submitBtn.textContent = 'Send Message';
+      alert(json.message); // Optional: show error in alert
+    }
+  })
+  .catch(error => {
+    console.log(error);
+    submitBtn.textContent = 'Send Message';
+    alert('Something went wrong!'); // Optional: show error in alert
+  })
+  .finally(() => {
+    form.reset();
     setTimeout(() => {
-      this.reset();
       submitBtn.disabled = false;
       submitBtn.textContent = 'Send Message';
       submitBtn.style.backgroundColor = 'transparent';
       submitBtn.style.borderColor = '#fec86a';
     }, 2000);
-  }, 1500);
+  });
 });

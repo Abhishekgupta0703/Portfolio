@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blockchain Guide | Abhishek Gupta</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="asset/carepy_logo-1.svg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="navbar">
+    <nav>
+      <a href="index.html">
+      <div class="logo"><img src="asset/carepy_logo-1.svg" alt="Carepy Logo" /></div></a>
+      <div class="nav-links nav" id="nav">
+        <a href="index.html#about">
+          < About />
+        </a>
+        <a href="index.html#skills">
+          < Skills />
+        </a>
+        <a href="index.html#portfolio">
+          < Portfolio />
+        </a>
+        <a href="index.html#blog">
+          < Blog />
+        </a>
+        <a href="index.html#contact">
+          < Contact />
+        </a>
+      </div>
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+    </nav>
+    <div class="menu-bg" id="menu-bg"></div>
+  </header>
+
+  <main class="blog-post-container">
+    <article class="blog-post-content">
+      <div class="blog-post-header">
+        <h1>Blockchain for Beginners: A Complete Guide</h1>
+        <div class="post-meta">
+          <span class="post-date">January 13, 2024</span>
+          <span class="post-category">Blockchain</span>
+        </div>
+      </div>
+
+      <div class="post-body">
+        <p>Blockchain is more than just a buzzword. It’s a foundational technology that's transforming finance,
+          security, supply chains, healthcare, and much more. In this beginner’s guide, we’ll break down what blockchain
+          is, how it works, and why it matters — all in plain language.</p>
+
+        <h2>1. What Is Blockchain?</h2>
+        <p>At its core, a <strong>blockchain</strong> is a digital ledger of transactions that is duplicated and
+          distributed across a network of computers. Think of it like a Google Sheet that is shared with thousands of
+          people, but no one can change the past entries without everyone agreeing.</p>
+        <p>It is called “blockchain” because data is grouped in blocks and each block is connected to the previous one —
+          forming a chain. Once added, the information in a block is permanent and tamper-proof.</p>
+
+        <h2>2. Why Was Blockchain Created?</h2>
+        <p>The first blockchain was introduced in 2009 by a person or group using the name <strong>Satoshi
+            Nakamoto</strong>. It was created to support <strong>Bitcoin</strong>, a decentralized digital currency that
+          removes the need for banks or central authorities.</p>
+        <p>Blockchain solved a key problem in digital transactions: <strong>trust</strong>. Instead of relying on banks
+          or intermediaries, users could verify transactions through code, cryptography, and consensus.</p>
+
+        <h2>3. Key Features of Blockchain</h2>
+        <ul>
+          <li><strong>Decentralization:</strong> No central authority; data is distributed across thousands of computers
+            (nodes).</li>
+          <li><strong>Immutability:</strong> Once recorded, data on the blockchain cannot be altered.</li>
+          <li><strong>Transparency:</strong> Transactions are publicly visible (in public blockchains like Bitcoin,
+            Ethereum).</li>
+          <li><strong>Security:</strong> Cryptography ensures each transaction is verified and securely linked to the
+            chain.</li>
+        </ul>
+
+        <h2>4. How Does Blockchain Work?</h2>
+        <p>Let’s break it down step-by-step using a Bitcoin example:</p>
+        <ol>
+          <li><strong>Transaction Initiation:</strong> Alice wants to send 1 BTC to Bob.</li>
+          <li><strong>Broadcast:</strong> The transaction is broadcast to the Bitcoin network.</li>
+          <li><strong>Verification:</strong> Miners (special computers) verify the transaction using cryptographic
+            puzzles.</li>
+          <li><strong>Block Creation:</strong> Verified transactions are grouped into a block.</li>
+          <li><strong>Consensus:</strong> Through a mechanism called <strong>Proof of Work</strong>, the network agrees
+            to add the block to the chain.</li>
+          <li><strong>Confirmation:</strong> The block is added, and Bob receives his Bitcoin.</li>
+        </ol>
+
+        <h2>5. Types of Blockchains</h2>
+        <ul>
+          <li><strong>Public Blockchain:</strong> Anyone can join, view, and validate transactions (e.g., Bitcoin,
+            Ethereum).</li>
+          <li><strong>Private Blockchain:</strong> Access is restricted to a group (used by businesses and enterprises).
+          </li>
+          <li><strong>Consortium Blockchain:</strong> Controlled by multiple organizations with shared access (e.g.,
+            banking consortiums).</li>
+        </ul>
+
+        <h2>6. Popular Use Cases of Blockchain</h2>
+        <ul>
+          <li><strong>Cryptocurrencies:</strong> Bitcoin, Ethereum, and others use blockchain to function without
+            central banks.</li>
+          <li><strong>Supply Chain Tracking:</strong> Companies use blockchain to track products from origin to delivery
+            (e.g., Walmart, IBM Food Trust).</li>
+          <li><strong>Smart Contracts:</strong> Code that runs automatically when conditions are met, eliminating
+            middlemen (e.g., DeFi apps).</li>
+          <li><strong>Digital Identity:</strong> Blockchain can secure identities and reduce fraud in voting,
+            healthcare, etc.</li>
+          <li><strong>NFTs:</strong> Non-Fungible Tokens represent unique assets like art, music, or in-game items on
+            blockchain.</li>
+        </ul>
+
+        <h2>7. What Are Smart Contracts?</h2>
+        <p>Smart contracts are self-executing pieces of code stored on the blockchain. They automatically enforce rules
+          and outcomes without requiring a third party.</p>
+        <p><strong>Example:</strong> If you rent an apartment via a smart contract, once you send the payment, the
+          contract automatically sends the digital key. No landlord approval needed.</p>
+
+        <h2>8. What Is Mining?</h2>
+        <p>Mining is the process used in some blockchains (like Bitcoin) to validate transactions and add new blocks.
+          Miners use powerful computers to solve complex mathematical problems.</p>
+        <p>Whoever solves the puzzle first adds the block and receives a reward (like Bitcoin). This is called
+          <strong>Proof of Work</strong>.</p>
+
+        <h2>9. Consensus Mechanisms</h2>
+        <p>Consensus is how the network agrees on the current state of the blockchain. Common mechanisms include:</p>
+        <ul>
+          <li><strong>Proof of Work (PoW):</strong> Requires mining and high energy (used in Bitcoin).</li>
+          <li><strong>Proof of Stake (PoS):</strong> Validators are chosen based on the amount of crypto they lock up as
+            a stake (used in Ethereum 2.0).</li>
+          <li><strong>Delegated PoS, Proof of Authority, etc.:</strong> Variants used in enterprise or faster
+            blockchains.</li>
+        </ul>
+
+        <h2>10. Benefits of Blockchain</h2>
+        <ul>
+          <li>Trustless system — no need for middlemen</li>
+          <li>High security and data integrity</li>
+          <li>Transparent, auditable records</li>
+          <li>Decentralized and censorship-resistant</li>
+        </ul>
+
+        <h2>11. Challenges and Limitations</h2>
+        <ul>
+          <li><strong>Scalability:</strong> Public blockchains can be slow and congested.</li>
+          <li><strong>Energy Usage:</strong> PoW systems like Bitcoin consume significant electricity.</li>
+          <li><strong>Regulatory Uncertainty:</strong> Different countries have different rules — or none.</li>
+          <li><strong>User Experience:</strong> Wallets, keys, and transaction fees can be confusing for beginners.</li>
+        </ul>
+
+        <h2>12. Blockchain vs Traditional Database</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Blockchain</th>
+              <th>Traditional Database</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Decentralized</td>
+              <td>Centralized</td>
+            </tr>
+            <tr>
+              <td>Immutable records</td>
+              <td>Data can be modified</td>
+            </tr>
+            <tr>
+              <td>Publicly auditable</td>
+              <td>Private to owner</td>
+            </tr>
+            <tr>
+              <td>Transparent by default</td>
+              <td>Restricted visibility</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>13. Getting Started with Blockchain</h2>
+        <ul>
+          <li><strong>Create a Wallet:</strong> Use <a href="https://okto.go.link/defi_home?referral_code=PWttr4&adj_t=13c5o7y4">Okto</a>, MetaMask, or Bitget Wallet.</li>
+          <li><strong>Buy Crypto:</strong> Start small with BTC or ETH from exchanges like <a href="https://join.coindcx.com/invite/AUdjT">Coindcx</a>, CoinEx, or Binance.
+          </li>
+          <li><strong>Explore:</strong> Try decentralized apps (dApps) like Uniswap or OpenSea.</li>
+          <li><strong>Learn:</strong> Read whitepapers, take beginner courses (e.g., on Coursera or YouTube).</li>
+        </ul>
+
+        <h2>14. Final Thoughts</h2>
+        <p>Blockchain is a powerful innovation reshaping the internet and global systems. While it may seem complex at
+          first, the core ideas are simple — decentralization, transparency, and trust through technology.</p>
+        <p>If you're just starting out, take your time, learn from reliable sources, and explore step by step. The
+          future is decentralized — and you can be part of it.</p>
+      </div>
+
+      <div class="post-footer">
+        <div class="social-share">
+          <span>Share this post:</span>
+          <a href="#" aria-label="Share on Twitter"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#" aria-label="Share on LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          <a href="#" aria-label="Share via Email"><i class="ri-mail-send-line"></i></a>
+        </div>
+        <div class="post-paging">
+          <a href="./blog-1.html" class="back-to-blog">
+            <i class="ri-arrow-left-line"></i> Previous Blog
+          </a>
+          <a href="index.html#blog" class="back-to-blog">
+            </i> Back to Blogs
+          </a>
+          <a href="./blog-3.html" class="back-to-blog">
+            Next Blog<i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
