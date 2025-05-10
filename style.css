@@ -1071,3 +1071,7 @@ section {
     transform: translate(-50%, -50%);
   }
 }
+.visits{
+  text-align: center;
+  margin-top: 30px;
+}
